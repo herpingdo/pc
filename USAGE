@@ -9,7 +9,7 @@ There are a few operators/commands which you can type on the REPL. They are list
 v: Pop one number off of the stack, push the square root of this number.
 p: Pop one number off of the stack, print it, and then discard it.
 d: Duplicate the top number on the stack.
-s: Show the stack. (Note that this is printed in such a way that the BOTTOM (the highest index) number is the one on the top of the stack.
+s: Show the stack. (Note that this is printed in such a way that the BOTTOM (the highest index) number is the one on the top of the stack.)
 S: Swap the top two stack elements.
 
 Everything else is considered a C `double`, and parsed and pushed onto the stack as one.
