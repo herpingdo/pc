@@ -113,7 +113,7 @@ char *do_pop(Stack *s) {
 }
 
 char *do_dup(Stack *s) {
-    STACK_CHECK(s, 2)
+    STACK_CHECK(s, 1)
     stack_dup(s);
     return NULL;
 }
