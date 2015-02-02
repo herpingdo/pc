@@ -12,5 +12,5 @@ d: Duplicate the top number on the stack.
 s: Show the stack.
 S: Swap the top two stack elements.
 
-Everything else is considered a C `double`, and pushed onto the stack as one.
+Everything else is considered a C `double`, and parsed and pushed onto the stack as one.
 EOF (^D) exits.
