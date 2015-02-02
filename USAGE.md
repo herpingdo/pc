@@ -1,4 +1,5 @@
-pc is a stack-based calculator. There are a few operators/commands which you can type on the REPL. They are listed below:
+pc is a stack-based calculator that operates on double-precision floating point numbers.
+There are a few operators/commands which you can type on the REPL. They are listed below:
 
 +: Pop two numbers off of the stack, add them, and push the result.
 -: Pop two numbers off of the stack, subtract the second from the first, and push the result.
@@ -11,5 +12,5 @@ d: Duplicate the top number on the stack.
 s: Show the stack.
 S: Swap the top two stack elements.
 
-Everything else is considered a number, and pushed onto the stack as one.
+Everything else is considered a C `double`, and pushed onto the stack as one.
 EOF (^D) exits.
