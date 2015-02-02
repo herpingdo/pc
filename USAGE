@@ -12,3 +12,4 @@ s: Show the stack.
 S: Swap the top two stack elements.
 
 Everything else is considered a number, and pushed onto the stack as one.
+EOF (^D) exits.
