@@ -151,7 +151,6 @@ void repl() {
     char *res;
 
     while (true) {
-        line = NULL;
         good = false;
         res = NULL;
         ret = getline(&line, &line_size, stdin);
@@ -181,6 +180,11 @@ void repl() {
                 stack_push(s, d);
             }
         }
+        free(line);
+        line = NULL;
+    }
+
+    if (line) {
         free(line);
     }
 
