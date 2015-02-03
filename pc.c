@@ -139,15 +139,16 @@ const callback_s callbacks[] = {
 const int num_callbacks = 10;
 
 void repl() {
-    Stack *s = stack_new();
-    char *line;
-    size_t line_size;
-    int ret;
-    int i;
-    callback_s cur;
-    bool good;
+    int i, ret;
+    Stack *s;
     double d;
-    char *res;
+    bool good;
+    callback_s cur;
+    char *line, *res;
+    size_t line_size;
+    
+    s = stack_new();
+    line = NULL;
 
     while (true) {
         good = false;
