@@ -106,7 +106,6 @@ char *do_pop(Stack *s) {
     STACK_CHECK(s, 1)
 
     d = stack_pop(s);
-    memset(buf, 0, 32);
     snprintf(buf, 32, "%f\n", d);
 
     return strdup(buf);
